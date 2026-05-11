@@ -15,5 +15,9 @@
                 "onecentlin.laravel-blade"
             ]
         }
+    },
+    "onCreateCommand": "composer global require laravel/installer",
+    "remoteEnv": {
+        "PATH": "${containerEnv:PATH}:/home/user/.composer/vendor/bin"
     }
 }
